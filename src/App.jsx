@@ -4,7 +4,7 @@ import Card from './Card';
 
 const App = () => {
   const cards = [
-    { title: 'Incomplete', boxes: ["clientName", 'Hello, welcome to the page', 'B', 'U', 15, 25, 'date'] }, // Define your box data here
+    { title: 'Incomplete', boxes: ["clientName", 'Hello, welcome to the page', 'B', 'U', 15, 25, 'date'] },
     { title: 'To-do', boxes: ['clientName', 'Hello, welcome to the page', 'B', 'U', 15, 25, 'date'] },
     { title: 'Doing', boxes: ['clientName', 'Hello, welcome to the page', 'B', 'U', 15, 25, 'date'] },
     { title: 'Under Review', boxes: ['clientName', 'Hello, welcome to the page', 'B', 'U', 15, 25, 'date'] },
@@ -13,7 +13,7 @@ const App = () => {
   ];
 
   return (
-    <div className="app">
+    <div className="app" style={{ overflowX: 'scroll' }}>
       {cards.map((card, index) => <Card key={index} {...card} />)}
     </div>
   );
